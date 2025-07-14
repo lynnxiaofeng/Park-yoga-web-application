@@ -2,6 +2,7 @@
 
 Written by Xiaofeng Lin for Assignment02 of unit IFN666 Web and Mobile Application Development. This App is developed to post yoga courses in park for users to join who are interested in joining closeby their location. 
 
+Please check out the demo vdo for the fron end demonstration
 ## Purpose
 
 The **Yoga Course API** is a backend service built using **Express.js** that enables users to manage yoga courses, authenticate users, and book courses. It supports creating, updating, deleting, and retrieving yoga courses by amdin, as well as creating, updating bookings for available courses. This API is designed to provide a secure and efficient backend for a course management application.
