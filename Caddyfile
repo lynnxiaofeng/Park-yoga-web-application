@@ -1,0 +1,26 @@
+n11724668.ifn666.com {
+	handle /yogacourse/* {
+		uri strip_prefix /yogacourse
+		reverse_proxy localhost:3005
+	}
+	handle /yogacourse/api/* {
+		uri strip_prefix /yogacourse  
+		reverse_proxy localhost:3005
+	}
+
+	handle /api/* {
+		reverse_proxy localhost:3001
+	}
+
+	handle_path /assessment02/* {
+		root * /var/www/html/assessment02
+		try_files {path} /assessment02/index.html
+		file_server
+	}
+
+	handle {
+		reverse_proxy localhost:3002
+	}
+}
+
+

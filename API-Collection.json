@@ -1,0 +1,373 @@
+{
+  "v": 6,
+  "name": "yoga",
+  "folders": [
+    {
+      "v": 6,
+      "name": "User",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "name": "Register",
+          "method": "POST",
+          "endpoint": "http://<<baseUrl>>/users/register",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": " {\n    \"username\": \"Admin8\",\n    \"email\": \"admin@example.com\",\n    \"password\": \"adm8\",\n    \"is_admin\": true\n  }"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "login",
+          "method": "POST",
+          "endpoint": "http://<<baseUrl>>/users/login",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "none",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": " {\n    \"email\": \"admin@example.com\",\n    \"password\": \"adm8\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "Get All",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/users",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "Get by id",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/users/AdminOne1",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "PUT by id",
+          "method": "PUT",
+          "endpoint": "http://<<baseUrl>>/users/Admin4",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": " {\n \"username\": \"Admin4\",\n    \"email\": \"admin4@example.com\",\n    \"password\": \"adm44\"\n }"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "DELETE by id",
+          "method": "DELETE",
+          "endpoint": "http://<<baseUrl>>/users/UserTwo",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m96pq3pl_6b881be2-6c89-4f2c-b8b8-e3bb5f809188"
+    },
+    {
+      "v": 6,
+      "name": "Course",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "name": "POST course",
+          "method": "POST",
+          "endpoint": "http://<<baseUrl>>/courses",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"name\": \"Morning Yoga\",\n  \"location\": {\n    \"suburb\": \"Suburb 4\",\n    \"park\": \"Mowbray park\",\n    \"link\": \"https://maps.app.goo.gl/32ZNSFt2PJP6d2Nz5\"\n  },\n  \"description\": \"Experience tranquility with yoga in the morning.\",\n  \"time\": \"Sundays at 7:00 AM\",\n  \"teacher\": \"67fb208b9b18cd2c737f871c\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "Get All courses",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/courses",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": ""
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "Get course by id",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/courses/67fe02e7531b4161fd886803",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "PUT update course by id",
+          "method": "PUT",
+          "endpoint": "http://<<baseUrl>>/courses/67fe04593fe0a60e0c80066b",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n    \"location\": {\n      \"suburb\": \"Suburb 3\",\n      \"park\": \"Park 3\",\n      \"link\": \"https://example.com/park4\"\n    },\n    \"name\": \"Updated Evening Yoga \",\n    \"description\": \"Experience tranquility with yoga at evening.\",\n    \"time\": \"Mondays at 5:30 PM\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "DELETE course by id",
+          "method": "DELETE",
+          "endpoint": "http://<<baseUrl>>/courses/67fe03f03fe0a60e0c800665",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m96pqmmz_3dc98b94-ba85-4874-87a9-8feffb9f0b5e"
+    },
+    {
+      "v": 6,
+      "name": "Booking",
+      "folders": [],
+      "requests": [
+        {
+          "v": "11",
+          "name": "POST a booking",
+          "method": "POST",
+          "endpoint": "http://<<baseUrl>>/bookings",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"bookingCourse\": \"67fe040d3fe0a60e0c800667\",\n  \"status\": \"Confirmed\"\n}"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "Get all booking",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/bookings",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "GET booking by course id",
+          "method": "GET",
+          "endpoint": "http://<<baseUrl>>/bookings/67fe03cf3fe0a60e0c800663",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "PUT booking by id",
+          "method": "PUT",
+          "endpoint": "http://<<baseUrl>>/bookings/67ff056dcd8f79ad389ec96a",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": "application/json",
+            "body": "{\n  \"bookingCourse\": \"67fe040d3fe0a60e0c800667\",\n  \"status\": \"Pending\"\n}\n"
+          },
+          "requestVariables": [],
+          "responses": {}
+        },
+        {
+          "v": "11",
+          "name": "DELETE booking by id",
+          "method": "DELETE",
+          "endpoint": "http://<<baseUrl>>/bookings/67ff0a3f4da7b71d5b64e80b",
+          "params": [],
+          "headers": [],
+          "preRequestScript": "",
+          "testScript": "",
+          "auth": {
+            "authType": "inherit",
+            "authActive": true
+          },
+          "body": {
+            "contentType": null,
+            "body": null
+          },
+          "requestVariables": [],
+          "responses": {}
+        }
+      ],
+      "auth": {
+        "authType": "inherit",
+        "authActive": true
+      },
+      "headers": [],
+      "_ref_id": "coll_m97ukvqe_c2fa2307-f4e5-40b2-92d2-1f213d1fe1ec"
+    }
+  ],
+  "requests": [],
+  "auth": {
+    "authType": "bearer",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2ODBkNjQ5MzdlYTk2OWM2YmZmNzhmMTciLCJ1c2VyX25hbWUiOiJBZG1pbjgiLCJpc19hZG1pbiI6dHJ1ZSwiaWF0IjoxNzQ1NzE3OTM0LCJleHAiOjE3NDU3MjE1MzR9.CazubeV9BayN3Pmmpmuekkb_r5GQ1GKfqUhG254DeKo",
+    "authActive": true
+  },
+  "headers": [],
+  "_ref_id": "coll_m96peu9z_4462f671-d4a8-44ba-9f32-962e85e4a744"
+}
